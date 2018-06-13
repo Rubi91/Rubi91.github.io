@@ -34,8 +34,12 @@ a {
   transform: scale(.98);
   transition: transform .5s, color .9s, opacity .9s ease;
 }
-@media all and (max-width:500px) {
+@media all and (max-width:700px) {
+  header {
+    font-size: 3rem;
+    margin: 0;
+  }
   .image img {
-    max-height: 400px;
+    width: 100%
   }
 }
