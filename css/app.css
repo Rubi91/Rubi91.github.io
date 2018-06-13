@@ -1,0 +1,41 @@
+html {
+  background-color: #F2E6E2;
+  color: #fd589a;
+}
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+header, footer {
+  text-align: center;
+  margin: 4em;
+}
+a {
+  color: inherit;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image {
+    margin: 10px;
+}
+.image img {
+  max-width: 400px;
+  transition: 0.5s all ease;
+}
+.image img:hover {
+  opacity: .7;
+  -webkit-transform: scale(.98);
+  -ms-transform: scale(.98);
+  transform: scale(.98);
+  transition: transform .5s, color .9s, opacity .9s ease;
+}
+@media all and (max-width:500px) {
+  .image img {
+    max-height: 400px;
+  }
+}
